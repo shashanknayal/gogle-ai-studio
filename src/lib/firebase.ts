@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, signInAnonymously, updateProfile } from 'firebase/auth';
 import { getFirestore, doc, getDocFromServer } from 'firebase/firestore';
+
 const cleanEnvVar = (val: string | undefined): string => {
   if (!val) return '';
   return val.replace(/^["']|["']$/g, '').trim();
